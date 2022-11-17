@@ -15,7 +15,7 @@ public interface AddI extends Remote {
     public BigInteger mul(int x,int y) throws RemoteException;
 
     // Division of Big Integers
-    public BigInteger[] div(int x,int y) throws RemoteException;
+    public BigInteger div(int x,int y) throws RemoteException;
 
     // Greatest Common Denominator (GCD)
     public BigInteger gcd(int x,int y) throws RemoteException;

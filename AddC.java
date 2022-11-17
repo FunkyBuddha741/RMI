@@ -51,7 +51,7 @@ public class AddC extends UnicastRemoteObject implements AddI {
 
     }
 
-    public BigInteger[] div(int x, int y)
+    public BigInteger div(int x, int y)
     throws RemoteException
     {
         String xrep = String.valueOf(x);
@@ -62,7 +62,7 @@ public class AddC extends UnicastRemoteObject implements AddI {
 
         BigInteger [] div = biX.divideAndRemainder(biY);
 
-        return div;
+        return div[0];
 
     }
 
@@ -76,6 +76,7 @@ public class AddC extends UnicastRemoteObject implements AddI {
         BigInteger biY = new BigInteger(yrep);
 
         return biX.gcd(biY);
+
 
     }
     
